@@ -52,10 +52,15 @@ brew install --cask EVAtiter/tap/finderalertmover
 FinderAlertMover を許可してください
 （他アプリのウィンドウ位置を操作するために必要です）。
 
-## 対応 OS
+## 対応環境
 
-- macOS 13.0 (Ventura) 以降
+- **macOS 13.0 (Ventura) 以降**
+- **Apple Silicon (arm64) 専用**（v1.2.2 以降。Intel Mac はサポート外）
 - Apple 公証済み（Notarized by Apple）
+
+> Intel Mac (x86_64) をお使いの方は、Universal バイナリの
+> [v1.2.1](https://github.com/EVAtiter/FinderAlertMover-release/releases/tag/v1.2.1)
+> をご利用ください。
 
 ## ライセンス / 著作権
 
