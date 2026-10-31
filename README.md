@@ -37,8 +37,8 @@ Finder の確認ダイアログ（「置き換える」「ゴミ箱に移動」�
 brew install --cask EVAtiter/tap/finderalertmover
 ```
 
-> Homebrew 6.0 以降で `HOMEBREW_REQUIRE_TAP_TRUST` を有効にしている場合は、
-> 先に `brew tap EVAtiter/tap` と `brew trust EVAtiter/tap` を実行してください。
+> Homebrew が信頼していない tap として読み込みを拒否する場合は、
+> 先に `brew trust --cask EVAtiter/tap/finderalertmover` を実行してください。
 
 ### 手動インストール
 
@@ -54,7 +54,7 @@ FinderAlertMover を許可してください
 
 ## 対応環境
 
-- **macOS 13.0 (Ventura) 以降**
+- **macOS 27.2 以降**（v1.2.5 から。それより前の macOS では [v1.2.4](https://github.com/EVAtiter/FinderAlertMover-release/releases/tag/v1.2.4) をご利用ください）
 - **Apple Silicon (arm64) 専用**（v1.2.2 以降。Intel Mac はサポート外）
 - Apple 公証済み（Notarized by Apple）
 
