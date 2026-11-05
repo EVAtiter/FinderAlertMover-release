@@ -1,67 +1,62 @@
+[English](README.md) | [日本語](README.ja.md)
+
 # FinderAlertMover
 
-Finder の確認ダイアログ（「置き換える」「ゴミ箱に移動」「コピー」「移動」など）を、
-**マウスカーソル付近へ自動的に移動**させる macOS 用ユーティリティです。
+A macOS utility that **automatically moves Finder confirmation dialogs** (Replace, Move to Trash, Copy, Move, and so on)
+**near the mouse cursor**.
 
-## 開発のきっかけ
+## Why I made it
 
-大型モニターやマルチモニター環境で Finder を使ってファイル操作を行っていると、
-「置き換える」「ゴミ箱に移動」「コピー」「移動」などの確認ダイアログが、
-意図しない場所に表示されることがあります。
+When you work with files in the Finder on a large display or with multiple displays, confirmation dialogs such as
+Replace, Move to Trash, Copy, and Move can appear in places you don't expect.
 
-特に複数のディスプレイを利用している環境では、ダイアログが視界の外や
-別モニターに表示され、その都度ダイアログを探す必要があり、作業の流れや
-思考が中断されてしまいます。
+With multiple displays in particular, a dialog may appear out of sight or on another display. You have to look for it
+each time, and that breaks the flow of your work and your train of thought.
 
-「そもそもダイアログが表示される原因となった操作はマウスカーソルの位置で
-行われているのだから、確認ダイアログもマウスカーソル付近に表示できないか」と
-考えたのが本ソフトウェア開発のきっかけです。
+"The action that brought up the dialog was done where the mouse cursor is, so why not show the confirmation dialog near
+the mouse cursor too?" That idea is how this software started.
 
-ダイアログをマウスカーソル付近へ移動させることで、視線移動やダイアログ探索による
-ストレスを軽減し、ファイル操作時の作業効率向上を目指しています。
+By moving dialogs near the mouse cursor, it aims to cut down the eye movement and the hunting for dialogs, and to make
+working with files smoother.
 
-## 主な機能
+## Features
 
-- Finder のアラート・確認ダイアログをマウスカーソル付近へ自動移動
-- 「置き換える」「ゴミ箱に移動」「コピー」「移動」などの各種ダイアログに対応
-- マルチモニター対応（マウスがある画面にダイアログを移動）
-- メニューバーアイコンから操作（ログイン時に開く / メニューを隠す）
-- ログイン時の自動起動に対応
-- 日本語 / 英語ローカライズ
+- Automatically moves Finder alerts and confirmation dialogs near the mouse cursor
+- Works with Replace, Move to Trash, Copy, Move, and other dialogs
+- Works whatever language the Finder is shown in (since v1.2.5)
+- Multiple displays (moves the dialog to the display the mouse is on)
+- Controlled from the menu bar icon (Open at Login / Hide Menu)
+- Starts automatically at login
+- Japanese / English
 
-## インストール
+## Installation
 
-### Homebrew（推奨）
+### Homebrew (recommended)
 
 ```sh
 brew install --cask EVAtiter/tap/finderalertmover
 ```
 
-> Homebrew が信頼していない tap として読み込みを拒否する場合は、
-> 先に `brew trust --cask EVAtiter/tap/finderalertmover` を実行してください。
+> If Homebrew refuses to load the tap because it is not trusted,
+> run `brew trust --cask EVAtiter/tap/finderalertmover` first.
 
-### 手動インストール
+### Manual installation
 
-1. [Releases](https://github.com/EVAtiter/FinderAlertMover-release/releases) から
-   最新版の `.zip` をダウンロード
-2. 展開した `FinderAlertMover.app` を `アプリケーション` フォルダーへ移動
+1. Download the latest `.zip` from
+   [Releases](https://github.com/EVAtiter/FinderAlertMover-release/releases)
+2. Unzip it and move `FinderAlertMover.app` to the Applications folder
 
-### 初回設定（共通）
+### First-time setup (both methods)
 
-アプリを起動後、**システム設定 → プライバシーとセキュリティ → アクセシビリティ** で
-FinderAlertMover を許可してください
-（他アプリのウィンドウ位置を操作するために必要です）。
+After you open the app, allow FinderAlertMover in **System Settings → Privacy & Security → Accessibility**
+(it needs this to move other apps' windows).
 
-## 対応環境
+## Requirements
 
-- **macOS 27.2 以降**（v1.2.5 から。それより前の macOS では [v1.2.4](https://github.com/EVAtiter/FinderAlertMover-release/releases/tag/v1.2.4) をご利用ください）
-- **Apple Silicon (arm64) 専用**（v1.2.2 以降。Intel Mac はサポート外）
-- Apple 公証済み（Notarized by Apple）
+- **macOS 27.2 or later** (since v1.2.5. On earlier versions of macOS, use [v1.2.4](https://github.com/EVAtiter/FinderAlertMover-release/releases/tag/v1.2.4))
+- **Apple Silicon (arm64) only** (since v1.2.2. Intel Macs are not supported)
+- Notarized by Apple
 
-> Intel Mac (x86_64) をお使いの方は、Universal バイナリの
-> [v1.2.1](https://github.com/EVAtiter/FinderAlertMover-release/releases/tag/v1.2.1)
-> をご利用ください。
-
-## ライセンス / 著作権
+## License / Copyright
 
 Copyright © 2026 EVA Titer. All rights reserved.
