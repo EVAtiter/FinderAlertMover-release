@@ -57,7 +57,7 @@ FinderAlertMover を許可してください
 
 ## 対応環境
 
-- **macOS 27.2 以降**（v1.2.5 から）
+- **macOS 27.2 以降**（v1.2.5 から。それより前の macOS では [v1.2.4](https://github.com/EVAtiter/FinderAlertMover-release/releases/tag/v1.2.4) をご利用ください）
 - **Apple Silicon（arm64）専用**（v1.2.2 以降。Intel Mac はサポート外）
 - Apple 公証済み（Notarized by Apple）
 
