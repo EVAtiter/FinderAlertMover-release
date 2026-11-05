@@ -53,7 +53,7 @@ After you open the app, allow FinderAlertMover in **System Settings → Privacy 
 
 ## Requirements
 
-- **macOS 27.2 or later** (since v1.2.5)
+- **macOS 27.2 or later** (since v1.2.5. On earlier versions of macOS, use [v1.2.4](https://github.com/EVAtiter/FinderAlertMover-release/releases/tag/v1.2.4))
 - **Apple Silicon (arm64) only** (since v1.2.2. Intel Macs are not supported)
 - Notarized by Apple
 
